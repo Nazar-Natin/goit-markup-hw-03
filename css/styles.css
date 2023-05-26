@@ -25,6 +25,8 @@ img {
 }
 .visually-hidden {
     visibility: hidden;
+    pointer-events: none;
+    position: absolute;
 }
 .container {
     width: 1158px;
@@ -106,8 +108,9 @@ img {
 .logo-ending {
     color: #2E2F42;
 }
-.nav-item {
-    padding: 24px 0 24px;
+.nav-list {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-item:not(:last-child) {
     margin-right: 40px;
@@ -263,7 +266,8 @@ img {
 
 /* Portfolio */
 .portfolio {
-    padding: 96px 0 120px 0;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .filter-list {
     display: flex;
