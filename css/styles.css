@@ -11,6 +11,10 @@ html {
 *::after {
     box-sizing: inherit;
 }
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 body {
     background-color: #FFFFFF;
     color: #434455;
@@ -20,17 +24,7 @@ img {
     display: block;
 }
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    visibility: hidden;
 }
 .container {
     width: 1158px;
@@ -112,6 +106,9 @@ img {
 .logo-ending {
     color: #2E2F42;
 }
+.nav-item {
+    padding: 24px 0 24px;
+}
 .nav-item:not(:last-child) {
     margin-right: 40px;
 }
@@ -155,7 +152,6 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
-    margin-bottom: 120px;
 }
 .quote {
     max-width: 496px;
@@ -184,7 +180,7 @@ img {
 }
 /* Qualities */
 .qualities {
-    padding: 20px 0 120px;
+    padding: 120px 0 120px;
 }
 .our-qualities {
     display: flex;
