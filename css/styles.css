@@ -16,6 +16,22 @@ body {
     color: #434455;
     font-family: 'Roboto', sans-serif;
 }
+img {
+    display: block;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .container {
     width: 1158px;
     margin-left: auto;
@@ -35,7 +51,7 @@ body {
 .button {
     background: #4D5AE5;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: none;
 }
 .button:hover, .button:focus {
     background: #404BBF;
@@ -78,6 +94,10 @@ body {
 }
 .header {
     border-bottom: 1px solid #E7E9FC;
+}
+.navigation {
+    display: flex;
+    align-items: center;
 }
 .logo {
     color: #4D5AE5;
@@ -138,7 +158,7 @@ body {
     margin-bottom: 120px;
 }
 .quote {
-    width: 496px;
+    max-width: 496px;
     margin-right: auto;
     margin-left: auto;;
     color: #FFFFFF;
@@ -150,18 +170,21 @@ body {
     text-align: center;
 }
 .order-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    background-color: #4d5ae5;
+    border-radius: 4px;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    border-radius: 4px;
-    padding: 16px 32px 16px 32px;
 }
 /* Qualities */
 .qualities {
-    margin-bottom: 120px;
+    padding: 20px 0 120px;
 }
 .our-qualities {
     display: flex;
@@ -174,12 +197,15 @@ body {
 }
 /* Work */
 .work {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .types-of-work {
     display: flex;
 }
 .work-example {
+    width: calc((100% - 48px) / 3);
+}
+.work-example:not(:last-child) {
     margin-right: 24px;
 }
 /* Team members */
@@ -193,17 +219,23 @@ body {
     justify-content: center;
 }
 .team-member {
+    width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
     text-align: center;
-    padding-bottom: 32px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.member-image {
-    margin-bottom: 32px;
+.member-info {
+    padding: 32px 16px;
 }
 .team-member:not(:last-child) {
     margin-right: 24px;
+}
+.caption-workers {
+    text-align: center;
+}
+.text-workers {
+    text-align: center;
 }
 /* Footer */
 .footer {
@@ -216,6 +248,10 @@ body {
     width: 264px;
     height: 112px;
 }
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 .logo-ending-footer {
     color: #F4F4FD;
 }
@@ -226,37 +262,17 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 /* Portfolio */
-.caption-portfolio {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    margin-left: 16px;
-}
-.text-portfolio {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-left: 16px;
-}
 .portfolio {
-    margin-bottom: 120px;
+    padding: 96px 0 120px 0;
 }
 .filter-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 .filter-button {
@@ -268,7 +284,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    border: 1px solid #E7E9FC;
+    border: 1px solid #e7e9fc; 
     border-radius: 4px;
     padding: 12px 24px 12px 24px;
 }
@@ -277,17 +293,26 @@ body {
 }
 .filter-button:hover, .filter-button:focus {
     background: #404BBF;
+    border: 1px solid transparent;
     color: #FFFFFF;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 .portfolio-example{
+    width: calc((100% - 48px) / 3);
     margin-right: 24px;
     margin-bottom: 48px;
-    border: 1px solid #E7E9FC;
-    padding-bottom: 32px;
+}
+.portfolio-example:nth-child(3n) {
+    margin-right: 0;
+}
+.portfolio-example:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+.example-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }

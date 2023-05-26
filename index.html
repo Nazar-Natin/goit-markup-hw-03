@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -21,12 +21,12 @@
     <!-- Header -->
     <header class="header">
       <div class="container header-container">
-        <!-- Logo -->
-        <a href="./index.html" class="link logo"
-          >Web<span class="logo-ending">Studio</span></a
-        >
         <!-- Navigation -->
         <nav class="navigation">
+          <!-- Logo -->
+          <a href="./index.html" class="link logo"
+            >Web<span class="logo-ending">Studio</span></a
+          >
           <ul class="list">
             <li class="nav-item">
               <a href="./index.html" class="link branches">Studio</a>
@@ -60,14 +60,17 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container hero-container"></div>
-        <h1 class="quote">Effective Solutions for Your Business</h1>
-        <button type="button" class="button order-button">Order Service</button>
+        <div class="container hero-container">
+          <h1 class="quote">Effective Solutions for Your Business</h1>
+          <button type="button" class="button order-button">
+            Order Service
+          </button>
+        </div>
       </section>
       <!-- Qualities -->
       <section class="qualities">
         <div class="container qualities-container">
-          <h2 hidden class="section-heading">Qualities</h2>
+          <h2 class="section-heading visually-hidden">Qualities</h2>
           <ul class="list our-qualities">
             <li class="qualitie">
               <h3 class="caption">Strategy</h3>
@@ -102,8 +105,8 @@
       </section>
       <!-- Types of work -->
       <section class="work">
-        <h2 class="section-heading">What are we doing</h2>
         <div class="container">
+          <h2 class="section-heading">What are we doing</h2>
           <ul class="list types-of-work">
             <li class="work-example">
               <img
@@ -131,57 +134,66 @@
       </section>
       <!-- Team -->
       <section class="team">
-        <div class="container"></div>
-        <h2 class="section-heading">Our Team</h2>
-        <ul class="list team-members">
-          <li class="team-member">
-            <img
-              src="./images/mark.jpg"
-              alt="Mark Guerrero"
-              width="264"
-              class="member-image"
-            />
-            <h3 class="caption">Mark Guerrero</h3>
-            <p class="text">Product Designer</p>
-          </li>
-          <li class="team-member">
-            <img
-              src="./images/tom.jpg"
-              alt="Tom Ford"
-              width="264"
-              class="member-image"
-            />
-            <h3 class="caption">Tom Ford</h3>
-            <p class="text">Frontend Developer</p>
-          </li>
-          <li class="team-member">
-            <img
-              src="./images/camila.jpg"
-              alt="Camila Garcia"
-              width="264"
-              class="member-image"
-            />
-            <h3 class="caption">Camila Garcia</h3>
-            <p class="text">Marketing</p>
-          </li>
-          <li class="team-member">
-            <img
-              src="./images/daniel.jpg"
-              alt="Daniel Wilson"
-              width="264"
-              class="member-image"
-            />
-            <h3 class="caption">Daniel Wilson</h3>
-            <p class="text">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-heading">Our Team</h2>
+          <ul class="list team-members">
+            <li class="team-member">
+              <img
+                src="./images/mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                class="member-image"
+              />
+              <div class="member-info">
+                <h3 class="caption-workers">Mark Guerrero</h3>
+                <p class="text-workers">Product Designer</p>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/tom.jpg"
+                alt="Tom Ford"
+                width="264"
+                class="member-image"
+              />
+              <div class="member-info">
+                <h3 class="caption-workers">Tom Ford</h3>
+                <p class="text-workers">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/camila.jpg"
+                alt="Camila Garcia"
+                width="264"
+                class="member-image"
+              />
+              <div class="member-info">
+                <h3 class="caption-workers">Camila Garcia</h3>
+                <p class="text-workers">Marketing</p>
+              </div>
+            </li>
+            <li class="team-member">
+              <img
+                src="./images/daniel.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                class="member-image"
+              />
+              <div class="member-info">
+                <h3 class="caption-workers">Daniel Wilson</h3>
+                <p class="text-workers">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-container">
+      <div class="container">
         <!-- Logo -->
-        <a href="./index.html" class="link logo"
+        <a href="./index.html" class="link logo logo-footer"
           >Web<span class="logo-ending-footer">Studio</span></a
         >
         <p class="text-footer">
