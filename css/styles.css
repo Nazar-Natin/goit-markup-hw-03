@@ -150,10 +150,6 @@ img {
     color: #404BBF;
 }
 /* Hero */
-.hero-container {
-    display: flex;
-    flex-direction: column;
-}
 .hero {
     background-color: #2E2F42;
     height: 600px;
@@ -175,6 +171,8 @@ img {
 }
 .order-button {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 169px;
     height: 56px;
     background-color: #4d5ae5;
